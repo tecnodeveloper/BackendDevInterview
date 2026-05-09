@@ -5,7 +5,7 @@ Generate answers for a list of junior backend developer interview questions in *
 
 Explain concepts briefly where needed, then relate them to **Node.js, MERN stack, OOP, databases, AI chatbot, payment integration, and backend projects** with practical examples.
 
-Keep answers professional, concise, interview-ready, and focused on **real-world backend scenarios**.
+Keep answers professional, concise, interview-ready, and focused on **real-world backend scenarios**. and give me first 25 answer then after that other 30 
 
 
 
