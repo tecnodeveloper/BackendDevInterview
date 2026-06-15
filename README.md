@@ -6,51 +6,6 @@ This repository is a **complete backend developer interview preparation guide**.
 
 ---
 
-## Complete Folder Structure
-
-```text
-1st_Round
-│
-├── Behaviour
-│   ├── Interview_prepare_Daily
-│   └── chatgpt-question
-│
-├── Technical_Interview
-│   ├── API_Development
-│   │   └── Topic Name
-│   ├── Authentication_Authorization
-│   ├── OOP
-│   ├── DBMS
-│   │   ├── NoSQL
-│   │   └── SQL
-│   └── Data-Structure
-│
-├── Languages
-│   ├── javascript
-│   ├── php
-│   └── Python
-│
-└── Frameworks
-    ├── FastAPI
-    ├── Laravel
-    └── Nodejs
-
-2nd_Round
-│
-├── Unit_Testing
-├── System_Design
-├── Coding_Assignments
-├── Mock_Interviews
-├── Docker_command
-└── Github_commands_and_Advance_features
-
-CommonInterviewAnswer
-Prompt
-README
-```
-
----
-
 ## Phases of Preparation
 
 ### Phase 1: Behavioral & Daily Practice
