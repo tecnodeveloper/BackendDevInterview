@@ -37,6 +37,32 @@ Think of a **capsule**:
 You **don’t touch the medicine directly**, you interact through the capsule.
 
 ---
+## 1. Encapsulation (E)
+
+```cpp
+#include <iostream>
+
+class BankAccount {
+private:
+    double balance = 500.00; // Hidden data
+
+public:
+    void deposit(double amount) { 
+        if (amount > 0) balance += amount; 
+    }
+    
+    double getBalance() { return balance; }
+};
+
+int main() {
+    BankAccount account;
+    account.deposit(150.00);
+    std::cout << "Balance: \$" << account.getBalance(); 
+    return 0;
+}
+```
+
+---
 
 ##  Why It Exists
 
@@ -68,6 +94,32 @@ Parent → Child relationship:
 - Can add or modify behavior
 
 ---
+## 2. Inheritance (I)
+
+```cpp
+#include <iostream>
+
+class Animal {
+public:
+    void eat() { std::cout << "Eating...\n"; }
+};
+
+class Dog : public Animal {
+public:
+    void bark() { std::cout << "Woof!\n"; }
+};
+
+int main() {
+    Dog myDog;
+    myDog.eat();  
+    myDog.bark(); 
+    return 0;
+}
+```
+
+---
+
+
 
 ##  Why It Exists
 
@@ -110,6 +162,33 @@ Polymorphism means **one interface, multiple implementations**.
 Same action, different behavior:
 - Button click → different outcomes
 - Same method → different outputs
+
+
+---
+
+## 3. Polymorphism (P)
+
+```cpp
+#include <iostream>
+
+class Shape {
+public:
+    virtual void draw() { std::cout << "Drawing a shape.\n"; } 
+};
+
+class Circle : public Shape {
+public:
+    void draw() override { std::cout << "Drawing a circle.\n"; }
+};
+
+int main() {
+    Shape* myShape = new Circle(); 
+    myShape->draw(); 
+    delete myShape;
+    return 0;
+}
+```
+
 
 ---
 
@@ -165,6 +244,31 @@ Abstraction means **hiding complex implementation details** and showing only ess
 Driving a car:
 - You use **steering & pedals**
 - You don’t see engine internals
+
+---
+## 4. Abstraction (A)
+
+```cpp
+#include <iostream>
+
+class CoffeeMachine {
+public:
+    virtual void makeCoffee() = 0; 
+};
+
+class EspressoMachine : public CoffeeMachine {
+public:
+    void makeCoffee() override {
+        std::cout << "Pouring Espresso Shot!\n"; 
+    }
+};
+
+int main() {
+    EspressoMachine machine;
+    machine.makeCoffee(); 
+    return 0;
+}
+```
 
 ---
 
@@ -225,3 +329,6 @@ Abstraction = **Hide complexity, expose essentials**
     -  Inheritance = reuse
     - Polymorphism = flexibility
     -  Abstraction = hiding complexity  
+
+
+

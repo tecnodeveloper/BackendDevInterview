@@ -61,6 +61,32 @@ Same function → different class → different behavior
 
 ---
 
+## Function Overloading Syntax
+
+```javascript
+class Calculator {
+  add(a, b) {}
+  add(a, b, c) {}
+}
+```
+
+---
+
+## Function Overriding Syntax
+
+```javascript
+class Parent {
+  show() {
+    console.log("Parent show");
+  }
+}
+
+class Child extends Parent {
+  show() {
+    console.log("Child show");
+  }
+}
+```
 ##  Key Points
 
 - Same function signature

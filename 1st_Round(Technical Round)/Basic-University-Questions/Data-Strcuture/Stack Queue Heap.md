@@ -1,4 +1,4 @@
-# Stack, Queue, Heap in C++ (OOP Perspective)
+# Stack, Queue, Heap in C++
 
 ---
 
@@ -9,7 +9,6 @@
 ## 1.1 Definition
 
 A **Stack** is a linear data structure that follows:
-
 > **LIFO (Last In, First Out)**
 
 The last element added is the first one removed.
@@ -18,12 +17,9 @@ The last element added is the first one removed.
 
 ## 1.2 Why Stack Exists
 
-- Needed for **reversing operations**
-    
-- Used in **function calls (call stack)**
-    
-- Helps in **undo/redo systems**
-    
+- Needed for **reversing operations**    
+- Used in **function calls (call stack)**    
+- Helps in **undo/redo systems**    
 
 ---
 
@@ -31,37 +27,10 @@ The last element added is the first one removed.
 
 Think of a **stack of books**:
 
-- Add on top
-    
-- Remove from top
-    
+- Add on top    
+- Remove from top 
 
 ---
-
-## 1.4 Syntax (Concept in JS Style)
-
-```javascript
-class Stack {
-  constructor() {
-    this.items = [];
-  }
-
-  push(x) {
-    this.items.push(x);
-  }
-
-  pop() {
-    return this.items.pop();
-  }
-
-  peek() {
-    return this.items[this.items.length - 1];
-  }
-}
-```
-
----
-
 ## 1.5 Basic Example
 
 ```javascript
@@ -90,30 +59,16 @@ Pop → 30 removed
 
 ## 1.7 Real-World Use Case
 
-- Browser back button
-    
-- Undo feature
-    
-
----
-
-## 1.8 Common Mistakes
-
-❌ Popping empty stack  
-✔ Always check before pop
+- Browser back button    
+- Undo feature    
 
 ---
 
 ## 1.9 Key Points
 
-- LIFO
-    
-- Fast operations (O(1))
-    
-- Only top accessible
-    
-
----
+- LIFO    
+- Fast operations (O(1))    
+- Only top accessible    
 
 ---
 
@@ -124,7 +79,6 @@ Pop → 30 removed
 ## 2.1 Definition
 
 A **Queue** follows:
-
 > **FIFO (First In, First Out)**
 
 First inserted element is removed first.

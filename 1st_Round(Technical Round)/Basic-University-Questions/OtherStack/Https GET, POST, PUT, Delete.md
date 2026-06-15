@@ -1,4 +1,4 @@
-# HTTP Methods — GET, POST, PUT, DELETE
+# HTTP Methods ( GET, POST, PUT, DELETE )
 
 ---
 

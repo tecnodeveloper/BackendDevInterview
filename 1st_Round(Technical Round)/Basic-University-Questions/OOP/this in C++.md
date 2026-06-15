@@ -37,6 +37,35 @@ Think of `this` as a **self-reference**:
 - Like saying: “I am this object”
 - Each object has its own `this`
 
+--- 
+
+```cpp  
+#include <iostream>  
+using namespace std;  
+  
+class Student {  
+private:  
+string name;  
+  
+public:  
+void setName(string name) {  
+this->name = name;  
+}  
+  
+void display() {  
+cout << name << endl;  
+}  
+};  
+  
+int main() {  
+Student s;  
+  
+s.setName("Ali");  
+s.display();  
+  
+return 0;  
+}  
+```
 ---
 
 ## 16. Key Points
