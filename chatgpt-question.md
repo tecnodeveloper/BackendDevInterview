@@ -40,9 +40,9 @@ Generate a list of 55 must-know interview questions** for a **junior backend dev
         
 3. **Output Requirements**
     
-    - Exactly **55 questions**.
+    - Exactly 20 questions**.
         
-    - Group questions by: **Introduction to Programming(5%), OOP(30%), Frameworks(30%), Projects related question(30%),  **.
+    - Group questions by: **Introduction to Programming(5%), OOP(30%), Frameworks(30%), Projects related question(30%),  **. advance topics
         
     - Highly relevant to a candidate with **Node.js, MERN, EV project, AI chatbot experience** and make question from introduce yourself part also
         

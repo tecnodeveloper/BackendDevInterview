@@ -2,7 +2,7 @@
 
 ---
 
-# 📌 Simple Definitions
+#  Simple Definitions
 
 ## Virtual Function
 
@@ -21,7 +21,7 @@ C++ does not have a direct “static class” keyword like some languages, but a
 
 ---
 
-# ❓ Why These Concepts Exist
+#  Why These Concepts Exist
 
 ## Virtual Function
 
@@ -43,7 +43,7 @@ C++ does not have a direct “static class” keyword like some languages, but a
 
 ---
 
-# 🧠 Mental Models
+#  Mental Models
 
 ## Virtual Function
 
@@ -67,41 +67,15 @@ Think of it as a **“toolbox”**:
 
 ---
 
-# ⚙️ Syntax
+#  Syntax
 
 ---
 
-## Virtual Function Syntax
-
-```javascript
-class Base {
-public:
-  virtual void show() {
-    console.log("Base");
-  }
-};
-```
+## VIRTUAL FUNCTION
 
 ---
 
-## Static Class Style Syntax (C++ Concept)
-
-```javascript
-class MathUtils {
-public:
-  static int add(int a, int b) {
-    return a + b;
-  }
-};
-```
-
----
-
-# 🔁 VIRTUAL FUNCTION
-
----
-
-## 📌 Basic Example
+##  Basic Example
 
 ```javascript
 class Animal {
@@ -120,7 +94,7 @@ class Dog extends Animal {
 
 ---
 
-## 🪜 Step-by-Step Execution
+##  Step-by-Step Execution
 
 1. Base class defines virtual function
     
@@ -135,7 +109,7 @@ class Dog extends Animal {
 
 ---
 
-## 🧪 Usage Example
+## Usage Example
 
 ```javascript
 Animal* a = new Dog();
@@ -144,68 +118,8 @@ a.sound(); // Bark
 
 ---
 
-## 🌍 Real-World Example (Payment System)
 
-```javascript
-class Payment {
-public:
-  virtual void process() {
-    console.log("Generic payment");
-  }
-};
-
-class CreditCard extends Payment {
-  void process() override {
-    console.log("Credit card payment");
-  }
-};
-```
-
----
-
-## ❌ Incorrect Example
-
-```javascript
-class Base {
-public:
-  void show() {}
-};
-
-class Derived extends Base {
-  void show() {}
-};
-```
-
-### Problem:
-
-- No runtime polymorphism
-    
-
----
-
-## ✔ Fix
-
-```javascript
-class Base {
-public:
-  virtual void show() {}
-};
-```
-
----
-
-## ⚠️ Common Mistakes
-
-- Forgetting `virtual`
-    
-- Using objects instead of pointers
-    
-- Not overriding properly
-    
-
----
-
-## 🔑 Key Points
+##  Key Points
 
 - Enables runtime polymorphism
     
@@ -218,32 +132,12 @@ public:
 
 ---
 
-# ⚙️ STATIC CLASS CONCEPT
+#  STATIC CLASS CONCEPT
 
 ---
 
-## 📌 Basic Example
 
-```javascript
-class Logger {
-public:
-  static void log() {
-    console.log("Logging message");
-  }
-};
-```
-
----
-
-## 🧪 Usage
-
-```javascript
-Logger::log();
-```
-
----
-
-## 🪜 Step-by-Step Behavior
+##  Step-by-Step Behavior
 
 1. No object is created
     
@@ -256,7 +150,7 @@ Logger::log();
 
 ---
 
-## 🌍 Real-World Example (Math Utility)
+## Real-World Example (Math Utility)
 
 ```javascript
 class MathUtils {
@@ -275,55 +169,7 @@ MathUtils::multiply(2, 3);
 
 ---
 
-## 🌍 Real-World Example (Backend Logging Service)
-
-```javascript
-class LogService {
-public:
-  static void info() {
-    console.log("Info log");
-  }
-
-  static void error() {
-    console.log("Error log");
-  }
-};
-```
-
----
-
-## ❌ Incorrect Example
-
-```javascript
-class Utils {
-public:
-  int add(int a, int b) {
-    return a + b;
-  }
-};
-```
-
-### Problem:
-
-- Requires object unnecessarily
-    
-
----
-
-## ✔ Fix
-
-```javascript
-class Utils {
-public:
-  static int add(int a, int b) {
-    return a + b;
-  }
-};
-```
-
----
-
-## ⚠️ Common Mistakes
+##  Common Mistakes
 
 - Trying to access non-static members inside static functions
     
@@ -334,7 +180,7 @@ public:
 
 ---
 
-## 🔑 Key Points
+##  Key Points
 
 - No object required
     
@@ -347,7 +193,7 @@ public:
 
 ---
 
-# ⚖️ COMPARISON TABLE
+#  COMPARISON TABLE
 
 |Feature|Virtual Function|Static Class Concept|
 |---|---|---|
@@ -359,47 +205,7 @@ public:
 |State support|Yes|No (static only)|
 
 ---
-
-# ⚠️ EDGE CASES & PITFALLS
-
----
-
-## Virtual Function Pitfalls
-
-### ❌ Object slicing
-
-```cpp
-Base b = Derived(); // loses derived part
-```
-
-### ❌ Fix
-
-Use pointers or references
-
----
-
-## Static Class Pitfalls
-
-### ❌ Trying to access instance data
-
-```cpp
-class Test {
-public:
-  int x;
-
-  static void show() {
-    x = 10; // ❌ error
-  }
-};
-```
-
-### ✔ Fix
-
-Use static variables or pass parameters
-
----
-
-# 🧠 INTERNAL BEHAVIOR
+#  INTERNAL BEHAVIOR
 
 ---
 
@@ -427,7 +233,7 @@ Use static variables or pass parameters
 
 ---
 
-# 🌍 REAL-WORLD USE CASES
+#  REAL-WORLD USE CASES
 
 ---
 
@@ -488,7 +294,7 @@ public:
 
 ---
 
-# 🧠 MENTAL MODEL SUMMARY
+##  MENTAL MODEL SUMMARY
 
 ## Virtual Function
 
@@ -500,7 +306,7 @@ public:
 
 ---
 
-# 🔑 KEY POINTS
+#  KEY POINTS
 
 - Virtual function enables runtime polymorphism
     
@@ -515,7 +321,7 @@ public:
 
 ---
 
-# 🎯 INTERVIEW SUMMARY
+#  INTERVIEW SUMMARY
 
 - Virtual function = runtime polymorphism via vtable
     
@@ -530,7 +336,7 @@ public:
 
 ---
 
-# 🧠 FINAL MENTAL MODEL
+#  FINAL MENTAL MODEL
 
 - Virtual Function → “Dynamic decision at runtime”
     
