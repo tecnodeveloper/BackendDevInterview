@@ -1,3 +1,4 @@
+
 # Backend Developer Preparation
 
 ## Project IDEA:
@@ -44,23 +45,10 @@ This repository is a **complete backend developer interview preparation guide**.
 ## How to Use
 
 1. Start with **Behaviour** for daily practice.
-2. Move to **Technical_Interview** folder for APIs, Auth, OOP, Data Structures, and DBMS concepts.
+2. Move to **Basic-University-Questions** folder for APIs, Auth, OOP, Data Structures, and DBMS concepts.
 3. Practice language-specific topics in **Languages**.
 4. Explore frameworks in **Frameworks** for real-world backend practice.
 5. Use **2nd_Round** for advanced preparation like testing, system design, and mock interviews.
 6. Open the repository in **Obsidian** for a searchable, linked note-taking experience:
    - Download Obsidian here: [https://obsidian.md/](https://obsidian.md/)
    - Open the folder as a vault and navigate topics efficiently.
-
----
-
-## Recommended Tools
-
-- IDE: VS Code, PyCharm, PHPStorm
-- Database: MySQL, PostgreSQL, MongoDB
-- API Testing: Postman
-- Version Control: Git/GitHub
-- Optional: Docker for environment setup
-- Markdown Notes: **Obsidian** for organized study
-
----

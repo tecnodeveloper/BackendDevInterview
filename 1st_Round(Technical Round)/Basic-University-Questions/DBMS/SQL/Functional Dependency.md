@@ -10,6 +10,8 @@ A **Functional Dependency** in a database is a relationship between **two sets o
 
 A → B
 
+If you know the student id then you can get student name, student numbers.
+
 ---
 
 ##  Why Functional Dependency Exists
@@ -54,24 +56,6 @@ Think of FD as a **cause-and-effect relationship**:
 
 ---
 
-###  Basic Example
-
-```javascript
-const students = [  
-  { studentId: 1, name: 'Ali' },  
-  { studentId: 2, name: 'Sara' },  
-];  
-  
-// Functional dependency:  
-// studentId → name
-
-```
-
-- Knowing `studentId` uniquely identifies `name`.
-
-
----
-
 ###  Real-World Example: E-commerce
 
 ~~~javascript
@@ -86,34 +70,6 @@ const orders = [
 - Each `orderId` uniquely determines the customer and address.
 
 ---
-
-##  Edge Cases & Pitfalls
-
-1. **Redundant FD**
-    - Declaring `A → C` when `A → B` and `B → C` already exist
-    - Fix: Remove transitive redundancies
-2. **Partial Dependency**
-    - Causes anomalies in **non-normalized tables**
-    - Fix: Decompose table to achieve 2NF
-3. **Incorrect FD**
-    
-    const students = [  
-      { studentId: 1, name: 'Ali', age: 20 },  
-      { studentId: 1, name: 'Sara', age: 21 },  
-    ];
-    
-    - `studentId → name` fails because IDs are duplicated incorrectly
-    - Fix: Ensure unique identifiers
-
----
-
-##  Internal Behavior
-
-- DBMS may use **indexes** on determinants to speed up queries
-- Enforces **data integrity** through **constraints**
-
----
-
 ##  Comparison Table
 
 | Concept               | Determines       | Notes                          |
@@ -144,18 +100,6 @@ const orders = [
 - Common question:
 
 > "Is `A → B` a full functional dependency?"
-> 
----
-
-##  Real-World Usage
-
-### 1. Backend (Node.js + DB)
-
-const query = `  
-SELECT name FROM Students WHERE studentId = 1  `;  
-// studentId → name
-
-- Uses FD to **ensure single record retrieval**.
 
 ---
 

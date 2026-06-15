@@ -99,7 +99,9 @@ Example: Dog **is an** Animal
 
 ##  Definition
 
-Polymorphism means **one interface, multiple implementations**.
+Polymorphism means **one interface, multiple implementations**. 
+
+- it may be compile time polymorphism like Function overloading and Runtime polymorphism like function overriding.
 
 ---
 
