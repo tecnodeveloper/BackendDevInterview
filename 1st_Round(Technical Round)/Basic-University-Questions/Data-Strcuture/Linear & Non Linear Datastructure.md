@@ -1,7 +1,7 @@
 # Linear Data Structure and Non-Linear Data Structures 
 ---
 
-# 📌 Simple Definition
+# Simple Definition
 
 ## Linear Data Structure
 
