@@ -1,0 +1,7 @@
+- SQL Fundamentals
+- CRUD Operations
+- Python Database Connectivity
+- Working with JSON
+- REST API Basics
+- Requests Library
+- API Authentication Concepts

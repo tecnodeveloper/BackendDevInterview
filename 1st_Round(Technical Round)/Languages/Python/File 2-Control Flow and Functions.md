@@ -1,0 +1,8 @@
+- If, Elif, Else
+- Loops (For, While)
+- Break, Continue, Pass
+- Functions
+- Arguments (`*args`, `**kwargs`)
+- Lambda Functions
+- Recursion
+- Scope (Local, Global, Nonlocal)

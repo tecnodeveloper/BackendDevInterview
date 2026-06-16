@@ -1,0 +1,6 @@
+- Variables and Data Types
+- Type Conversion
+- Operators
+- Input/Output
+- Python Keywords
+- Memory Management Basics

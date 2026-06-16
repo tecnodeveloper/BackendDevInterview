@@ -1,0 +1,10 @@
+- Mutable vs Immutable Objects
+- Deep Copy vs Shallow Copy
+- `is` vs `==`
+- `@staticmethod` vs `@classmethod`
+- GIL (Global Interpreter Lock)
+- Multithreading vs Multiprocessing
+- Python Memory Management
+- Duck Typing
+- Context Managers
+- Common Coding Interview Questions (Strings, Lists, Dicts)
