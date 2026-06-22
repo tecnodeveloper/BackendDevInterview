@@ -1,14 +1,10 @@
 # Constructor and Destructor
 
----
-
-## 1. Definition
-
 - A **constructor** is a special member function that is automatically called when an object is created. It initializes the object.
 
 - A **destructor** is used to cleans up resources. It is called when an object is destroyed.
 ---
-## 3. Mental Model
+## Mental Model
 
 Think of an object like a **hotel room**:
 - Constructor → preparing the room before guest arrives
@@ -16,11 +12,9 @@ Think of an object like a **hotel room**:
 
 ---
 
-## 4. Syntax
+##  Syntax
 
 ```cpp
-#include <iostream>
-using namespace std;
 
 class Example {
 public:
@@ -47,8 +41,6 @@ public:
 ## 8. Real-World Example (Database Connection)
 
 ```cpp
-#include <iostream>
-using namespace std;
 
 class DatabaseConnection {
 public:
@@ -69,7 +61,7 @@ int main() {
 }
 ```
 
-## 11. Key Points
+## Key Points
 
 - Same name as class    
 - No return type
@@ -78,7 +70,7 @@ int main() {
 
 ---
 
-## 12. Interview Tip
+## Interview Tip
 
 Constructor = **object initialization**
 
@@ -88,13 +80,13 @@ Constructor = **object initialization**
 
 ---
 
-## 13. Definition
+## Definition
 
 A destructor is used to **release resources automatically** when an object is destroyed.
 
 ---
 
-## 19. Key Points
+## Key Points
 
 - Same name as class with `~`
 - No parameters, no return type
@@ -103,7 +95,7 @@ A destructor is used to **release resources automatically** when an object is de
 
 ---
 
-## 20. Interview Tip
+## Interview Tip
 
 Destructor = **automatic cleanup**
 

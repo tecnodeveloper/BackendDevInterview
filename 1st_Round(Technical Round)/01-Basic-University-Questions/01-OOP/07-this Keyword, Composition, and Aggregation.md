@@ -1,17 +1,12 @@
 # `this` Keyword, Composition, and Aggregation 
 
----
-
-# 1. Introduction
+#  Introduction
 
 In Object-Oriented Programming (OOP), objects need a way to:
 
 - Access their own properties and methods
-    
 - Build relationships with other objects
-    
 - Reuse functionality without unnecessary inheritance
-    
 
 JavaScript provides the **`this` keyword** for object context and supports object relationships through **Composition** and **Aggregation**.
 
@@ -19,7 +14,7 @@ These three concepts are fundamental for writing scalable frontend and backend a
 
 ---
 
-# 2. The `this` Keyword in JavaScript
+# The `this` Keyword in JavaScript
 
 ## Definition
 
@@ -69,7 +64,7 @@ That object becomes `this`.
 
 ---
 
-# 3. Basic Syntax
+#  Basic Syntax
 
 ```cpp
 class Person {
@@ -99,7 +94,7 @@ this == &person
 
 ---
 
-# 4. How `this` Works Internally
+#  How `this` Works Internally
 
 When C++ executes:
 
@@ -121,7 +116,7 @@ this = &person;
 
 ---
 
-# 5. Example: Accessing Object Properties
+# Example: Accessing Object Properties
 
 ```cpp
 class Student {

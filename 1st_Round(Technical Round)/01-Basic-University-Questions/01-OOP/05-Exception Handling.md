@@ -1,14 +1,11 @@
 # Exception Handling 
----
-
-## 1. Definition
 
 **Exception handling** in C++ is a mechanism to handle **runtime errors** (unexpected situations) in a controlled way, preventing program crashes.
 
 > It allows you to separate **error-handling code** from normal logic.
 
 ---
-## 3. Mental Model
+## Mental Model
 
 Think of exception handling like a **safety net**:
 
@@ -18,7 +15,7 @@ Think of exception handling like a **safety net**:
 
 ---
 
-## 4. Core Syntax (Concept in JS Style)
+## Core Syntax (Concept in JS Style)
 
 ```javascript
 try {
@@ -32,7 +29,7 @@ try {
 
 ---
 
-## 5. C++ Equivalent Keywords
+## C++ Equivalent Keywords
 
 - `try` → block of code to monitor
 - `throw` → signal an error
@@ -40,7 +37,7 @@ try {
 
 ---
 
-## 7. Step-by-Step Execution
+## Step-by-Step Execution
 
 1. Code enters `try` block    
 2. Error condition detected
@@ -51,7 +48,7 @@ try {
 
 ---
 
-## 17. Key Points
+## Key Points
 
 - `try` → risky code
 - `throw` → generate error
@@ -61,7 +58,7 @@ try {
 
 ---
 
-## 18. Comparison: Exceptions vs Error Codes
+## Comparison: Exceptions vs Error Codes
 
 |Feature|Exceptions|Error Codes|
 |---|---|---|
@@ -80,7 +77,7 @@ try {
 
 ---
 
-## 22. Interview Summary
+## Interview Summary
 
 - Exception handling manages runtime errors
 - Uses `try`, `throw`, `catch`
@@ -89,7 +86,7 @@ try {
 
 ---
 
-## 23. Final Mental Model
+## Final Mental Model
 
 - `try` → “attempt this”
 - `throw` → “something went wrong”

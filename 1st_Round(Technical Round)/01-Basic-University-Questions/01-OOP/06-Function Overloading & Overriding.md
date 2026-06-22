@@ -1,7 +1,4 @@
-# Function Overloading & Function Overriding & Operator Overloading
----
-
-#  Definitions
+# Function Overloading &  Overriding and Operator Overloading
 
 ## Function Overloading
 
@@ -149,7 +146,7 @@ class Child extends Parent {
 - Enables polymorphism
 
 ---
-## 3. Payment Gateway System (Overriding)
+## Payment Gateway System (Overriding)
 
 - Stripe overrides payment processing
 - PayPal overrides payment processing

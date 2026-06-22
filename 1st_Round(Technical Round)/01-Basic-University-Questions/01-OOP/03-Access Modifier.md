@@ -1,10 +1,6 @@
 
 #  Access Specifiers in C++
 
----
-
-##  Definition
-
 **Access specifiers** control **who can access the data and functions** of a class.
 They define the **visibility (scope)** of class members.
 
@@ -112,8 +108,6 @@ Think of a **mobile phone**:
 - **Public** → Screen (everyone can use)
 - **Private** → Internal circuits (hidden)
 - **Protected** → System settings (only accessible by advanced/system-level access)
----
-
 -  Use getter/setter functions instead
 
 ---
