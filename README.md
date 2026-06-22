@@ -1,54 +1,67 @@
+# Project Idea
 
-# Backend Developer Preparation
-
-## Project IDEA:
-
-This repository is a **complete backend developer interview preparation guide**. It organizes all essential topics, frameworks, programming languages, and technical interview concepts in a structured way for systematic learning. The goal is to **prepare for technical rounds, behavioral questions, and framework-specific knowledge**, including API development, authentication, databases (SQL/NoSQL), and object-oriented programming.
+This repository is a structured set of interview and revision notes for backend development. It is organized to help with technical rounds, language fundamentals, framework practice, databases, APIs, authentication, data structures, testing, system design, and Git/Docker basics.
 
 ---
 
-## Phases of Preparation
+### 1st_Round(Technical Round)
 
-### Phase 1: Behavioral & Daily Practice
+#### 01-Basic-University-Questions
 
-- Practice common behavioral questions in **Behaviour** folder.
-- Use ChatGPT or other AI tools to simulate scenarios.
-- Maintain a daily practice log to track improvement.
+- `01-OOP` - classes, objects, inheritance, polymorphism, access modifiers, constructors, exceptions, friend functions, virtual functions, and static class topics.
+- `02-DBMS`
+  - `NoSQl` - NoSQL types, MongoDB basics, CRUD, aggregation pipeline, ORM fundamentals, distributed databases, and PostgreSQL fundamentals.
+  - `SQL` - ER diagram, keys, SQL queries, joins, functional dependency, indexing, normalization, and revision notes.
+- `03-Data-Strcuture` - linear and non-linear data structures, linked list, stack, queue, heap, tree, and revision notes.
+- `04-OtherStack` - HTTP methods, authentication basics, authorization techniques, and password hashing.
 
-### Phase 2: Technical Interview Topics
+#### 02-Languages
 
-- **API Development**: Request/Response lifecycle, REST principles, authentication, versioning, error handling.
-- **Authentication & Authorization**: JWT, OAuth2, session management, role-based access control.
-- **Data Structures**: Arrays, Linked Lists, Trees, Graphs, HashMaps, Queues, and Stacks.
-- **DBMS**:
-  - SQL: Queries, Joins, Indexing, Transactions.
-  - NoSQL: MongoDB, CRUD operations, Aggregation, Schema design.
+- `javascript` - JavaScript fundamentals, syntax, data types, operators, strings, arrays, objects, functions, OOP, async programming, promises, fetch, and revision notes.
+- `Python` - Python fundamentals, control flow, strings, data structures, OOP, modules, exceptions, libraries, APIs, and revision notes.
 
-- **OOP Concepts**: Classes & Objects, Four Pillars, Constructors, Access Modifiers, Polymorphism, Exception Handling, and Pointers.
+#### 03-Fameworks
 
-### Phase 3: Languages & Framework Mastery
+- `01-Nextjs` - Next.js documentation and revision notes.
+- `02-FastAPI` - FastAPI documentation and revision notes.
+- `03-Reactjs` - React.js documentation and revision notes.
+- `04-ExpressJs` - Express.js documentation and revision notes.
+- `05-Laravel` - Laravel documentation, revision notes, and reference material.
 
-- **Languages**: JavaScript, PHP, Python fundamentals and advanced topics.
-- **Frameworks**: Node.js, Laravel, FastAPI, hands-on backend practice with routing, middleware, and project structure.
+### 2nd_Round
 
-### Phase 4: Advanced Preparation (`2nd_Round`)
-
-- **Unit Testing**: Writing tests, frameworks, mocking, coverage.
-- **System Design**: Scalability, microservices, architecture design.
-- **Coding Assignments**: Practice coding challenges in multiple languages.
-- **Mock Interviews**: Simulate real interview scenarios.
-- **Docker Commands**: Containerization basics, building images, running containers.
-- **GitHub Commands & Advanced Features**: Version control, branching, pull requests, CI/CD basics.
+- `01-Coding Small Problem.md` - coding practice problems.
+- `02-Git-Github and Advance feature.md` - Git and GitHub concepts, branching, and advanced workflow topics.
+- `03-Docker command.md` - Docker basics and command reference.
+- `04-System Design.md` - system design concepts and architecture notes.
+- `05-Unit Testing vs Manual Testing.md` - testing strategies and comparison notes.
+- `Revision.md` - quick review material.
 
 ---
+
+## Reading commits
+
+Message start with keywords
+
+- update: for updating files
+- fix: fixing the code
+- add: adding new files or code
+- remove: removing new files or code
 
 ## How to Use
 
-1. Start with **Behaviour** for daily practice.
-2. Move to **Basic-University-Questions** folder for APIs, Auth, OOP, Data Structures, and DBMS concepts.
-3. Practice language-specific topics in **Languages**.
-4. Explore frameworks in **Frameworks** for real-world backend practice.
-5. Use **2nd_Round** for advanced preparation like testing, system design, and mock interviews.
-6. Open the repository in **Obsidian** for a searchable, linked note-taking experience:
-   - Download Obsidian here: [https://obsidian.md/](https://obsidian.md/)
-   - Open the folder as a vault and navigate topics efficiently.
+1. Start with `01-Basic-University-Questions` to build core concepts for technical interviews.
+2. Move to `02-Languages` to revise JavaScript and Python from fundamentals to intermediate topics.
+3. Use `03-Fameworks` to connect language knowledge with framework-level backend practice.
+4. Use `2nd_Round` for higher-level preparation such as system design, testing, Docker, and Git/GitHub.
+5. Open the repository in Obsidian for searchable navigation and linked note-taking.
+
+## Suggested Study Flow
+
+- First revise OOP, DBMS, and data structures.
+- Then strengthen JavaScript and Python.
+- After that, move into frameworks and backend implementation patterns.
+- Finish with revision, mock interview topics, system design, and tooling.
+
+- Tip Note
+  Use Obsidian to read markdown files. Open this project in obsidian vault and enjoy notes.
