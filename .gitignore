@@ -1,2 +1,4 @@
 .obsidian/
 CommonInterviewAnswer.md
+# Ignore all .exe files
+*.exe
