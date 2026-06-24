@@ -6,59 +6,15 @@
 
 A virtual function is a member function in a base class that allows runtime polymorphism, meaning the function call is resolved based on the actual object type at runtime.
 
-## Static Function
-
-A static function is a class-level member function that:
-
-- Belongs to the class itself rather than any specific object instance
-- Can be called without creating an instance of the class
-- Cannot access non-static data members or the `this` pointer
-
 ---
-
-## Why These Concepts Exist
-
-## Virtual Function
-
-- Enables dynamic behavior in inheritance
-- Solves the problem of fixed compile-time binding
-- Allows extensible system design
-
-## Static Function
-
-- Provides utility operations without forcing object creation
-- Saves memory by avoiding object overhead for simple actions
-- Groups related helper logic inside a relevant class namespace
-
----
-
 ## Mental Models
-
-## Virtual Function
 
 Think of it as a “smart function selector”:
 
 - Same call
 - Different behavior depending on the actual object
 
-## Static Function
-
-Think of it as a “tool inside a shared toolbox”:
-
-- No object ownership required
-- No independent state per object
-- Just a reusable tool nested inside a class namespace
-
 ---
-
-## Syntax
-
----
-
-## VIRTUAL FUNCTION
-
----
-
 ## Basic Example
 
 ```javascript
@@ -96,17 +52,40 @@ a.sound(); // Bark
 ```
 
 ---
-
 ## Key Points
 
 - Enables runtime polymorphism
 - Requires inheritance
 - Works with pointers/references
 - Uses a vtable internally
+---
+
+## INTERNAL BEHAVIOR
+
+- Compiler creates a vtable for the class
+- Each object instance contains a vptr
+- Calls are resolved at runtime through pointer lookups
+- Slight performance overhead due to indirection
+
+---
+# Static Function
+
+A static function is a class-level member function that:
+
+- Belongs to the class itself rather than any specific object instance
+- Can be called without creating an instance of the class
+- Cannot access non-static data members or the `this` pointer
 
 ---
 
-## STATIC FUNCTION
+## Mental Models
+
+Think of it as a “tool inside a shared toolbox”:
+
+- No object ownership required
+- No independent state per object
+- Just a reusable tool nested inside a class namespace
+
 
 ---
 
@@ -170,82 +149,20 @@ MathUtils::multiply(2, 3);
 
 ## INTERNAL BEHAVIOR
 
----
-
-## Virtual Function (Advanced)
-
-- Compiler creates a vtable for the class
-- Each object instance contains a vptr
-- Calls are resolved at runtime through pointer lookups
-- Slight performance overhead due to indirection
-
----
-
-## Static Function
-
 - Stored in program code memory exactly once
 - No object context or instance pointer passed
 - Direct function call compiled exactly like a regular global function
 
 ---
 
-## REAL-WORLD USE CASES
-
----
-
-## 1. Game Engine System (Virtual Function)
-
-```javascript
-class Character {
-public:
-  virtual void attack() {
-    console.log("Basic attack");
-  }
-};
-
-class Warrior extends Character {
-  void attack() override {
-    console.log("Sword attack");
-  }
-};
-```
-
-## Use Case:
-
-- Different character behaviors executed dynamically through a generic system list
-
----
-
-## 2. Logging System (Static Function)
-
-```javascript
-class Logger {
-public:
-  static void info() {
-    console.log("Info log");
-  }
-
-  static void error() {
-    console.log("Error log");
-  }
-};
-```
-
-## Use Case:
-
-- Global logging utility safely bundled under a single class namespace
-- No need to instantiate a logger object to write a quick log
-
----
-
-## 3. Payment Processing System (Hybrid)
+## REAL World Example Payment Processing System (Hybrid)
 
 - Virtual function → handles different payment execution routines (Credit Card vs PayPal)
 - Static function → handles shared mathematical utility helpers like tax calculation or currency formatting
 
 ---
 
-## MENTAL MODEL SUMMARY
+## SUMMARY
 
 ## Virtual Function
 
@@ -281,5 +198,3 @@ public:
 
 - Virtual Function → “Dynamic decision at runtime”
 - Static Function → “Shared class tool with no object needed”
-
----
