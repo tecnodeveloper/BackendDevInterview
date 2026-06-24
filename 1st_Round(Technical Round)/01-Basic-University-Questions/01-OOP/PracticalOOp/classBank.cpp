@@ -15,7 +15,7 @@ class Bank{
             balance = balance + depositMoney;
             cout<<depositMoney<<" money is succussfully deposited. Your current balance is "<<balance<<endl;
         }else{
-            cout<<"Please enter the correct number to deposit "<<" is not correct number"<<endl;
+            cout<<"Please enter the correct number to deposit "<<depositMoney<<" is not correct number"<<endl;
         }
     }
     void withdraw(){

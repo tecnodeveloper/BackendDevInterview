@@ -16,7 +16,7 @@ C++ Program to store books for library. As admin you can create books, edit them
 
 ## Links of helping resourse
 
-draw.io
-github.com/srombauts/sqlitecpp
-https://github.com/Microsoft/vcpkg
-g++ testDB.cpp -o testDB -I"C:\Users\rdev\vcpkg\installed\x64-mingw-dynamic\include" -L"C:\Users\rdev\vcpkg\installed\x64-mingw-dynamic\lib" -lSQLiteCpp -lsqlite3
+- [draw](draw.io)
+- [SqliteC++ Wrapper](github.com/srombauts/sqlitecpp)
+- [vcpkg](https://github.com/Microsoft/vcpkg)
+- g++ testDB.cpp -o testDB -I"C:\Users\rdev\vcpkg\installed\x64-mingw-dynamic\include" -L"C:\Users\rdev\vcpkg\installed\x64-mingw-dynamic\lib" -lSQLiteCpp -lsqlite3

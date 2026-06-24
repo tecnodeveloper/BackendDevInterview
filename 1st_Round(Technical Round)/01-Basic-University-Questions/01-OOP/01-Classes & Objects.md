@@ -122,7 +122,6 @@ int main(){
 
 Each object has **its own copy** of data members.
 
-
 ---
 
 ## Key Points
@@ -147,9 +146,6 @@ Each object has **its own copy** of data members.
 
 ---
 
-
----
-
 ## Interview Tips / Summary
 
 ### Must-Know Answers:
@@ -162,7 +158,3 @@ Each object has **its own copy** of data members.
     
 - **Difference between class and object?**  
     → Class defines structure, object uses it.
-    
-- **Why use classes?**  
-    → For modularity, reusability, and abstraction.
-
