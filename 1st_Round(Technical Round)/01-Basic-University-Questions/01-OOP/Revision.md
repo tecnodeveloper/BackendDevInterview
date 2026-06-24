@@ -21,13 +21,19 @@ Destructor is used to clean up memory resources that is allocated by object
 
 Exception handling is used to handle unexpected errors that may lead to program crash. Such as during file storing the user Storage is full
 
----
-
-Function overloading means same name of function but different parameter
-Function overriding means derived class has it's implementation of inherited parent function
+Friend function is non member function which has access to private and protected part of class. like prefer to use getter setter function instead of friend function bcz it's break encapsulation
 
 ---
 
+Function overloading means same name of function but different parameter like getUser(id), getUser(string email) but same name but input different
+ 
+ Function overriding: means Same signature, different implementation in derived class. like payment gatway() parent class -> stripe gatway(), paypal gatway() are derived class
+ 
+operator overloading means Same operator, custom behavior for classes.
+
+---
+
+this pointer is currently pointing to object
 
 ---
 

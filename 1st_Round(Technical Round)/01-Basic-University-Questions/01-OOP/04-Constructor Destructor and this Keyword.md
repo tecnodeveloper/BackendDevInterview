@@ -1,4 +1,4 @@
-# Constructor and Destructor
+# Constructor, Destructor and `this` Pointer
 
 - A **constructor** is a special member function that is automatically called when an object is created. It initializes the object.
 
@@ -126,3 +126,117 @@ Destructor = **automatic cleanup**
 - Constructor initializes object automatically
 - Destructor cleans resources automatically
 - Always manage dynamic memory properly
+
+---
+# `this` keyword
+
+The **`this` pointer** is a special pointer automatically available inside every non-static member function. 
+It points to the object that invoked the member function. `this` = "pointer to the current object"
+
+---
+
+## Mental Model
+
+Think of `this` as:
+
+> "Who am I right now?"
+
+Whenever an object calls a member function, C++ automatically passes the address of that object through the `this` pointer.
+
+---
+
+# Basic Syntax
+
+```cpp
+
+class Person
+{
+public:
+    string name = "Ali";
+
+    void greet()
+    {
+        cout << this->name << endl;
+    }
+};
+
+int main()
+{
+    Person person;
+    person.greet();
+}
+```
+---
+
+# How `this` Works Internally
+
+When C++ executes:
+
+```cpp
+person.greet();
+```
+
+The compiler internally treats it similarly to:
+
+```cpp
+Person::greet(&person);
+```
+
+Meaning:
+
+```cpp
+this = &person;
+```
+
+Inside the function:
+
+```cpp
+this->name
+```
+
+becomes:
+
+```cpp
+person.name
+```
+
+---
+
+# Resolving Naming Conflicts
+
+
+```cpp
+class User
+{
+public:
+    string name;
+//Constructor with same input as private variable so this is used
+    User(string name)
+    {
+        name = name;
+        //this->name = name;
+    }
+};
+```
+
+---
+
+# Common Mistakes with `this`
+
+```cpp
+class User
+{
+public:
+    static void greet()
+    {
+        cout << this->name;
+    }
+};
+```
+
+### Why?
+
+Static functions belong to the class, not an object.
+
+No `this` pointer exists.
+

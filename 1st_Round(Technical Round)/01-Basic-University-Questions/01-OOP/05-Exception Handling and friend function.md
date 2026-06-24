@@ -88,3 +88,51 @@ try {
 - `try` → “attempt this”
 - `throw` → “something went wrong”
 - `catch` → “handle the problem”
+
+--- 
+# Friend Function (interview only)
+
+A **friend function** is a special function that is **not a member of a class**, but it has **access to private and protected members** of that class.
+
+---
+##  Mental Model
+
+Think of a **VIP guest pass in a secure building**:
+
+- Normal people → cannot enter restricted rooms (private data)
+- Friend function → special pass → can access restricted areas
+- Still not a resident (not a class member)
+- Use friend functions only when necessary
+- Prefer getters/setters or public APIs
+
+---
+
+#  Friend Function vs Member Function
+
+| Feature             | Member Function    | Friend Function            |
+| ------------------- | ------------------ | -------------------------- |
+| Belongs to class    | Yes                | No                         |
+| Access private data | Yes                | Yes                        |
+| Uses `this` pointer | Yes                | No                         |
+| Encapsulation       | Maintains strictly | Breaks controlled boundary |
+| Use case            | Core behavior      | Utility / special access   |
+
+---
+
+#  Interview Tips
+
+- Friend function = **controlled violation of encapsulation**
+- Friend function is NOT a member
+- Common use case = **operator overloading**
+- It is not inherited and not part of class scope
+- No `this` pointer exists
+---
+
+#  Final Mental Model
+
+- Encapsulation → strict access control
+- Friend function → **controlled exception mechanism**
+
+> “A trusted outsider with full access to private internals”
+
+---

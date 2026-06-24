@@ -62,7 +62,7 @@ A derived class provides its own implementation of  inherited parent class funct
 class Animal
 {
 public:
-    virtual void sound()
+    void sound()
     {
         cout << "Animal Sound" << endl;
     }
@@ -79,8 +79,8 @@ public:
 
 int main()
 {
-    Animal* a = new Dog();
-    a->sound();
+    Dog d;
+    d->sound();
 }
 ```
 
@@ -112,7 +112,7 @@ Runtime looks up the table and calls the correct function.
 # Operator Overloading
 
 
-Built-in operators to work with user-defined classes.
+It allow developers to redefine the functionality of operator for user defined datatype. like you can customize +,-,/,% for class instance. 
 
 ---
 
@@ -126,10 +126,10 @@ public:
     int real;
     int imag;
 
-    Complex(int r, int i)
+    Complex(int real, int imag)
     {
-        real = r;
-        imag = i;
+        this->real = real;
+        this->imag = imag;
     }
 
     Complex operator+(const Complex& c)
@@ -151,12 +151,6 @@ int main()
     cout << c3.real << " "
          << c3.imag;
 }
-```
-
-Output:
-
-```text
-6 8
 ```
 
 ---
@@ -275,24 +269,6 @@ virtual void sound();
 
 ---
 
-## Operator Overloading Abuse
-
-Bad practice:
-
-```cpp
-user1 + user2;
-```
-
-Meaning:
-
-```cpp
-sendEmail(user1, user2);
-```
-
-Operators should represent intuitive actions.
-
----
-
 # Key Points
 
 - Function Overloading = Same name, different parameters.
@@ -301,9 +277,7 @@ Operators should represent intuitive actions.
     
 - Operator Overloading = Same operator, custom behavior for classes.
     
-- Overloading and operator overloading are compile-time polymorphism.
-    
-- Overriding is runtime polymorphism.
+- Overloading and operator overloading are compile-time polymorphism. Overriding is runtime polymorphism.
     
 - Overriding requires inheritance and virtual functions.
     
@@ -334,40 +308,17 @@ Redefining the behavior of existing operators for user-defined types.
 ### Function Overloading
 
 ```text
-Same Function Name
-+
-Different Inputs
-=
-Different Behaviors
+Same Function Name + Different Inputs = Different Behaviors
 ```
 
 ### Function Overriding
 
 ```text
-Same Function
-+
-Different Class
-=
-Different Behavior
+Same Function + Different Class = Different Behavior
 ```
 
 ### Operator Overloading
 
 ```text
-Same Operator
-+
-Different Object Type
-=
-Custom Behavior
-```
-
-### Unified View
-
-```text
-Overloading
-    ├── Function Overloading
-    └── Operator Overloading
-
-Overriding
-    └── Runtime Polymorphism
+Same Operator + Different Object Type = Custom Behavior
 ```
