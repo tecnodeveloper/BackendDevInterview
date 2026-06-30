@@ -27,7 +27,7 @@ this pointer points to current object. like if there is displayName() function i
 
 Exception handling is used to handle unexpected errors that may lead to program crash. Such as during file storing the user Storage is full
 
-Friend function is non member function which has access to private and protected part of class. like prefer to use getter setter function instead of friend function bcz it's break encapsulation
+Friend function is non member function which has access to private and protected part of class. like prefer to use getter setter function instead of friend function
 
 ---
 
@@ -49,5 +49,3 @@ In aggregation the child can live independently without parent class. weak relat
 Virtual function means Same signature, different implementation in derived class. like payment gatway() parent class -> stripe gatway(), paypal gatway() are derived class implementation.
 
 Non member function that can execute without need of creating object is Static function
-
----

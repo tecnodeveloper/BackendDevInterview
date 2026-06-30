@@ -43,7 +43,6 @@ int main()
 ## Internal Behavior
 
 Compiler chooses function based on:
-
 - Number of arguments
 - Data types of arguments
 - Order of arguments
@@ -51,7 +50,7 @@ Compiler chooses function based on:
 ---
 # Function Overriding
 
-A derived class provides its own implementation of  inherited parent class function.
+A derived class provides its own implementation of inherited parent class function.
 
 ---
 
@@ -71,7 +70,7 @@ public:
 class Dog : public Animal
 {
 public:
-    void sound() override
+    void sound() //override
     {
         cout << "Bark" << endl;
     }
@@ -80,32 +79,9 @@ public:
 int main()
 {
     Dog d;
-    d->sound();
+    d.sound();
 }
 ```
-
----
-## Internal Behavior 
-
-Most C++ compilers use:
-
-### Virtual Table (vtable)
-
-```text
-Animal
- |
- +---- sound() -> Animal::sound
-```
-
-Dog updates entry:
-
-```text
-Dog
- |
- +---- sound() -> Dog::sound
-```
-
-Runtime looks up the table and calls the correct function.
 
 ---
 
@@ -115,7 +91,6 @@ Runtime looks up the table and calls the correct function.
 It allow developers to redefine the functionality of operator for user defined datatype. like you can customize +,-,/,% for class instance. 
 
 ---
-
 ## Example
 
 ```cpp
@@ -189,7 +164,7 @@ Derived classes:
 ```cpp
 Stripe
 PayPal
-Razorpay
+Easypaise
 ```
 
 Each overrides:
@@ -202,107 +177,33 @@ with its own implementation.
 
 ---
 
-## Operator Overloading: Financial Software
-
-```cpp
-Money salary(50000);
-Money bonus(10000);
-
-Money total = salary + bonus;
-```
-
-More readable than:
-
-```cpp
-salary.add(bonus);
-```    
-
----
-
 # Comparison Table
 
-|Feature|Function Overloading|Function Overriding|Operator Overloading|
-|---|---|---|---|
-|Purpose|Same function, different inputs|Change inherited behavior|Redefine operator behavior|
-|Inheritance Required|No|Yes|No|
-|Parameters|Must differ|Must be same|Depends on operator|
-|Return Type|Can differ but not alone|Usually same/covariant|User-defined|
-|Binding|Compile-Time|Runtime|Compile-Time|
-|Polymorphism Type|Static|Dynamic|Static|
-|Uses Virtual Function|No|Yes|No|
-|Scope|Same class|Parent-child classes|User-defined classes|
-
----
-
-# Edge Cases & Pitfalls
-
-## Overloading Ambiguity
-
-```cpp
-void show(int);
-void show(double);
-
-show('A');
-```
-
-Compiler may choose an unexpected conversion.
-
----
-
-## Overriding Without virtual
-
-```cpp
-class Animal
-{
-public:
-    void sound();
-};
-```
-
-Runtime polymorphism will not work.
-
-Use:
-
-```cpp
-virtual void sound();
-```
+| Feature               | Function Overloading            | Function Overriding       | Operator Overloading       |
+| --------------------- | ------------------------------- | ------------------------- | -------------------------- |
+| Purpose               | Same function, different inputs | Change inherited behavior | Redefine operator behavior |
+| Inheritance Required  | No                              | Yes                       | No                         |
+| Parameters            | Must differ                     | Must be same              | Depends on operator        |
+| Return Type           | Can differ but not alone        | Usually same/covariant    | User-defined               |
+| Binding               | Compile-Time                    | Runtime                   | Compile-Time               |
+| Polymorphism Type     | Static                          | Dynamic                   | Static                     |
+| Uses Virtual Function | No                              | Yes                       | No                         |
+| Scope                 | Same class                      | Parent-child classes      | User-defined classes       |
 
 ---
 
 # Key Points
 
 - Function Overloading = Same name, different parameters.
-    
 - Function Overriding = Same signature, different implementation in derived class.
-    
 - Operator Overloading = Same operator, custom behavior for classes.
     
 - Overloading and operator overloading are compile-time polymorphism. Overriding is runtime polymorphism.
-    
 - Overriding requires inheritance and virtual functions.
-    
 - Operator overloading improves readability for custom types.
-    
 - Not all operators can be overloaded (`::`, `.`, `?:`, `sizeof`).
 
 ---
-
-# Interview Summary
-
-### What is Function Overloading?
-
-Same function name with different parameter lists in the same scope.
-
-### What is Function Overriding?
-
-A derived class redefines a virtual function from the base class.
-
-### What is Operator Overloading?
-
-Redefining the behavior of existing operators for user-defined types.
-
----
-
 # Final Mental Model
 
 ### Function Overloading
@@ -322,3 +223,14 @@ Same Function + Different Class = Different Behavior
 ```text
 Same Operator + Different Object Type = Custom Behavior
 ```
+
+---
+
+# Interview Summary
+
+### What is Function Overloading?
+Same function name with different parameter lists in the same scope.
+### What is Function Overriding?
+A derived class redefines a virtual function from the base class.
+### What is Operator Overloading?
+Redefining the behavior of existing operators for user-defined types.

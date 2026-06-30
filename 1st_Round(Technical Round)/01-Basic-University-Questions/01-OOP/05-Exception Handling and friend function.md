@@ -6,7 +6,6 @@
 ## Mental Model
 
 Think of exception handling like a **safety net**:
-
 - Code runs normally
 - If something goes wrong → control jumps to handler
 - Program recovers instead of crashing
@@ -44,9 +43,7 @@ try {
 4. Control jumps to `catch`
 5. Error is handled
 
-
 ---
-
 ## Key Points
 
 - `try` → risky code
@@ -69,8 +66,6 @@ try {
 
 - What is exception handling?
 - What happens when exception is thrown?
-- What is stack unwinding?
-- Can constructors throw exceptions?
 
 ---
 
@@ -127,12 +122,8 @@ Think of a **VIP guest pass in a secure building**:
 - It is not inherited and not part of class scope
 - No `this` pointer exists
 ---
-
 #  Final Mental Model
 
 - Encapsulation → strict access control
 - Friend function → **controlled exception mechanism**
-
-> “A trusted outsider with full access to private internals”
-
----
+- A trusted outsider with full access to private internals
