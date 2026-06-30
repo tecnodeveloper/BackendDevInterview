@@ -1,8 +1,5 @@
 # ER-Diagram (Entity-Relationship Diagram)
 
----
-
-##  Definition 
 
 An Entity-Relationship Diagram is a **visual blueprint of a database** that shows:
 

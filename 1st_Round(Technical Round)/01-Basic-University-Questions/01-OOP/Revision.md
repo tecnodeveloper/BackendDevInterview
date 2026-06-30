@@ -1,9 +1,3 @@
-
----
-
-
-
----
 # Summary
 
 ---
@@ -24,7 +18,7 @@ protected access by module level
 
 ---
 
-Constructor is special function that is used to intialize the object value
+Constructor is special function that is used to intialize the object value. it has no return type.
 Destructor is used to clean up memory resources that is allocated by object
 
 this pointer points to current object. like if there is displayName() function inside person class So we can access name by this.name;
@@ -54,6 +48,6 @@ In aggregation the child can live independently without parent class. weak relat
 ---
 Virtual function means Same signature, different implementation in derived class. like payment gatway() parent class -> stripe gatway(), paypal gatway() are derived class implementation.
 
-Non member function that can execute without need of creating object.
+Non member function that can execute without need of creating object is Static function
 
 ---

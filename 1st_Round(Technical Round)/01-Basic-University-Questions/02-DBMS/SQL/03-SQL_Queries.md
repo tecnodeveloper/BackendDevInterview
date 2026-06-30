@@ -1,7 +1,6 @@
 # SQL 
 
 ---
-##  Definition 
 
 **SQL (Structured Query Language)** is a language used to **communicate with relational databases**. It allows you to **store, retrieve, update, and delete data**.
 

@@ -44,8 +44,6 @@ Without keys:
 
 ##  1. Primary Key
 
-### Definition
-
 A **Primary Key** uniquely identifies each record in a table.
 
 ### Rules:
@@ -73,8 +71,6 @@ CREATE TABLE Users (
 
 ##  2. Candidate Key
 
-### Definition
-
 All possible attributes that can uniquely identify records.
 
 ### Example
@@ -91,8 +87,6 @@ if you pick id as primary key then all others are alternative key
 ---
 
 ##  3. Super Key
-
-### Definition
 
 A **super key** is any combination of attributes that uniquely identifies a row.
 ### Example
@@ -130,10 +124,7 @@ CREATE TABLE Orders (
 ---
 ##  6. Composite Key
 
-### Definition
-
 A key made of **multiple columns**
-
 ### Example
 
 const query = `  
