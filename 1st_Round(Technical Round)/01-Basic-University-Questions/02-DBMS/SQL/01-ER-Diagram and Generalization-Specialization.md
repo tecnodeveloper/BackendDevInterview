@@ -1,16 +1,16 @@
 # ER-Diagram (Entity-Relationship Diagram)
 
 
-An Entity-Relationship Diagram is a **visual blueprint of a database** that shows:
+An Entity-Relationship Diagram is a **visual blueprint of a database** 
 
-- **Entities** (things you store data about)
-- **Attributes** (details of those things)
-- **Relationships** (how they are connected)
+- **Entities** (things you store data about) -> tablename
+- **Attributes** (details of those things) -> columns
+- **Relationships** (how they are connected) -> 
 
 > In simple terms: it’s a **map of your database before you build it**.
 
 ---
-
+---
 ##  Why ER-Diagrams Exist
 
 ER diagrams are created **before writing SQL or code** to ensure a clean design.
@@ -19,7 +19,7 @@ ER diagrams are created **before writing SQL or code** to ensure a clean design.
 
 - **Database Planning** → Avoids bad schema design
 - **Clarity** → Makes complex systems understandable    
-- **Normalization Support** → Helps remove redundancy
+- **Normalization Support** → Helps remove redundancy (A good schema does't require normalization)
 ---
 
 ## Mental Model
@@ -27,7 +27,6 @@ ER diagrams are created **before writing SQL or code** to ensure a clean design.
 Think of ER diagrams like:
 
 - **Blueprint of a house**
-    
     - Entities = Rooms
     - Attributes = Room details
     - Relationships = Doors connecting rooms
@@ -41,10 +40,10 @@ With a blueprint → structured system
 
 ER diagrams are not written as code but designed through steps:
 
-1. Identify entities
-2. Define attributes
-3. Choose primary keys
-4. Identify relationships
+1. Identify entities by reading functional requirements
+2. Define attributes by identify nouns in functional requirements 
+3. Choose primary keys in table
+4. Identify relationships by using foreign key
 5. Assign cardinality
 6. Resolve many-to-many relationships
 
@@ -56,11 +55,9 @@ ER diagrams are not written as code but designed through steps:
 - Usually become **tables**
 
 Examples:
-
 - User    
 - Order    
 - Product
-
 ---
 
 ###  Attributes (Ovals)
@@ -114,7 +111,6 @@ Defines how many entities relate:
 -  Handles scheduling and grading
 
 - Relationships:
-    
     - Students ↔ Courses        
     - Teachers → Courses        
 
@@ -176,7 +172,6 @@ Car      Truck
 ##  Advanced Insights
 
 - ER diagrams are converted into:
-    
     - Tables        
     - Foreign keys
     - Strong vs weak entities
@@ -190,17 +185,11 @@ Car      Truck
 ## Key Points
 
 - ER Diagram = database blueprint
-    
-- Entities → tables
-    
-- Attributes → columns
-    
-- Relationships → foreign keys
-    
-- Cardinality defines connection rules
-    
+- Entities → tables    
+- Attributes → columns    
+- Relationships → foreign keys    
+- Cardinality defines connection rules    
 - Helps avoid poor schema design
-
 
 ---
 

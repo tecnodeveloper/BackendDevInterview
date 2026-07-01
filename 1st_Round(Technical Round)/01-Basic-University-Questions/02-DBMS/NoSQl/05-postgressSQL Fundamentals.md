@@ -1,6 +1,5 @@
 # PostgreSQL Fundamentals (SQL + JSON)
 
-## Definition
 
 **PostgreSQL** (often called _Postgres_) is an advanced open-source relational database system that supports both:
 

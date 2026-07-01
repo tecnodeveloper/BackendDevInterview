@@ -2,9 +2,9 @@
 
 ---
 
-ER-diagram is the design diagram of database schema before writing single line of sql query
-Generalization is the concept of top down approach 
-specialization is bottom up approach
+ER-diagram is the visual blueprint of database. It's simply map of your database before building schema
+Generalization is like combining multiple classes into one class like bottom up approach  vechicle class is general, car and truck are specific classes
+specialization is like breaking general classes into more specific class like top down approach
 
 --- 
 
@@ -20,10 +20,12 @@ select -> is used to retrieve data from database
 from -> is used to select from which table
 tablename -> just write table name
 
+transaction in sql is like all request are happen if not nothing query will run
+
 ---
 
 joins are used to connect two rows from two tables
-functional depend
+functional dependency is like if you know A then you C because A knows B just like if you know student rollno then you know his name fatherName.
 
 ---
 

@@ -9,8 +9,7 @@ Follow these strict guidelines:
 - Use clear Markdown headings (#, ##, ###)
 - Add horizontal separators (---) between major sections
 - Keep formatting clean and GitHub/Markdown compatible (NO Obsidian-specific syntax like [[wikilinks]] or %% comments)
-
-2. Content Depth:
+1. Content Depth:
 - Start with a simple definition in plain English
 - Explain WHY the concept exists
 - Include syntax section
