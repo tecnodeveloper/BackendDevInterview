@@ -3,19 +3,6 @@
 **Keys in DBMS are attributes (or sets of attributes) used to uniquely identify records (rows)** in a table and **establish relationships** between tables.
 
 ---
-
-##  Why Do Keys Exist?
-
-Imagine a table of users:
-
-|name|email|
-|---|---|
-|Ali|ali@gmail.com|
-|Ali|ali123@gmail.com|
-
-If we want to uniquely identify a user, using `name` is not enough. We need something **unique and reliable**.
-
----
 ##  Mental Model
 
 Think of a key like:
@@ -25,14 +12,13 @@ Think of a key like:
 - A **product barcode**
 
 Without keys:
-
-> A database is just messy data with no reliable way to find or relate records.
+ A database is just messy data with no reliable way to find or relate records.
 
 ---
 
 ##  Types of Keys in DBMS
 
-### 1. Primary Key
+### 1. Primary Key  
 ### 2. Candidate Key
 ### 3. Super Key
 ### 4. Alternate Key
@@ -42,7 +28,7 @@ Without keys:
 
 ---
 
-##  1. Primary Key
+## Primary Key
 
 A **Primary Key** uniquely identifies each record in a table.
 

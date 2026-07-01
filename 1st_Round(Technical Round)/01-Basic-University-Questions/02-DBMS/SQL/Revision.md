@@ -23,9 +23,9 @@ tablename -> just write table name
 ---
 
 joins are used to connect two rows from two tables
-functional depende
+functional depend
 
 ---
 
-indexing is used to fast the process of data reterival. if you think of common data that can be reterived very commonly you can put indexing on them
+indexing is used to fast the process of data retrieval. if you think of common data that can be retrieved very commonly you can put indexing on them
 normalization is used for data integrity. it ensure data consistency, maintainable and scalable.
