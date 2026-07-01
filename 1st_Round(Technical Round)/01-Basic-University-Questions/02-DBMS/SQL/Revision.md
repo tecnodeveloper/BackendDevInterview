@@ -2,7 +2,7 @@
 
 ---
 
-ER-diagram is the visual blueprint of database. It's simply map of your database before building schema
+ER-diagram is blueprint of database. It's simply map of your database before building schema
 Generalization is like combining multiple classes into one class like bottom up approach  vechicle class is general, car and truck are specific classes
 specialization is like breaking general classes into more specific class like top down approach
 
@@ -10,8 +10,11 @@ specialization is like breaking general classes into more specific class like to
 
 primary key is used to identify unique column in table
 candidate key is all those column that can be used as uniquely identifier.
-foreign key is used for data integrity like if the user is deleted from database then delete her other records like rollno also 
+foreign key is used to link two or more tables like if the user_id is deleted from database then  order_id will also deleted
 super key is combination of unique identifier and also other column
+composite key is made of multiple columns
+
+regular express is used to search or validate records in table. like "%keyword%" searching for records that contain this record.
 
 --- 
 
@@ -31,3 +34,9 @@ functional dependency is like if you know A then you C because A knows B just li
 
 indexing is used to fast the process of data retrieval. if you think of common data that can be retrieved very commonly you can put indexing on them
 normalization is used for data integrity. it ensure data consistency, maintainable and scalable.
+
+---
+
+select is used to retrival of data 
+
+---

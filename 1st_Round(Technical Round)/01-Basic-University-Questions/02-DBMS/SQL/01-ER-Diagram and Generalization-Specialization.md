@@ -5,11 +5,10 @@ An Entity-Relationship Diagram is a **visual blueprint of a database**
 
 - **Entities** (things you store data about) -> tablename
 - **Attributes** (details of those things) -> columns
-- **Relationships** (how they are connected) -> 
+- **Relationships** (how they are connected) -> joins, foreign key
 
 > In simple terms: it’s a **map of your database before you build it**.
 
----
 ---
 ##  Why ER-Diagrams Exist
 
@@ -44,8 +43,9 @@ ER diagrams are not written as code but designed through steps:
 2. Define attributes by identify nouns in functional requirements 
 3. Choose primary keys in table
 4. Identify relationships by using foreign key
-5. Assign cardinality
-6. Resolve many-to-many relationships
+5. Assign cardinality by using one to many or many to many
+6. Resolve many-to-many relationships by using joins
+7. Always use singular entities like single student can enroll in multiple courses not many students
 
 ---
 
@@ -78,7 +78,6 @@ Examples:
 - Underlined in ER diagram
 
 Example:
-
 - user_id
 - order_id
 
@@ -89,7 +88,6 @@ Example:
 - Show how entities are connected
 
 Examples:
-
 - User **places** Order    
 - Student **enrolls in** Course
 
@@ -103,7 +101,7 @@ Defines how many entities relate:
 | ---- | ------------ |
 | 1:1  | One-to-one   |
 | 1:N  | One-to-many  |
-| N:M  | Many-to-many |
+| M:M  | Many-to-many |
 
 ###  School Management System
 
@@ -195,9 +193,8 @@ Car      Truck
 
 ## Interview Tips
 
-- Explain with **real-world example (User–Order)**    
-- Know **cardinality types**    
-
+- Explain with **real-world example (User–Order)**    (User can give order through user_id So it make join table with order_id So we can see which user has make which order )
+- Know **cardinality types**     (one to many, many to many, many to one )
 
 ---
 

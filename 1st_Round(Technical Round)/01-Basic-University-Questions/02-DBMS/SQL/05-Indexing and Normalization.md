@@ -1,8 +1,6 @@
 # Indexing in DBMS
 
----
-
-##  Definition 
+--- 
 
 **Indexing** is a technique used in databases to **speed up data retrieval** by creating a separate data structure that allows the database to find rows quickly—without scanning the entire table.
 
@@ -130,7 +128,7 @@ Without normalization:
 - Bugs increase
 ---
 
-## 🧠 Mental Model
+##  Mental Model
 
 Think of a messy spreadsheet:
 

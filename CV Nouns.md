@@ -20,7 +20,7 @@
 - reactjs
 - gemini api
 - postgressSQL
-- react architecture
+- ReAct(Reasoning + Action)
 - user defined metrices
 - content extraction
 - Beautifull soap

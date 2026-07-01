@@ -164,7 +164,7 @@ ORDER BY total_users DESC;
 DELETE FROM users;  
 ```  
   
-❌ Deletes every record.  
+ Deletes every record.  
   
 ### Correct  
   
@@ -226,7 +226,7 @@ WHERE email='${email}'
 await db.query(query);  
 ```  
   
-❌ Vulnerable to SQL Injection.  
+ Vulnerable to SQL Injection.  
   
 ---  
   
